@@ -5,7 +5,7 @@
 #############################
 
 # Define your hostname
-DEMOSTHENES=66.228.56.141
+DEMOSTHENES=123.456.789.012
 
 # Clear all rules
 /sbin/iptables -F
