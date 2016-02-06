@@ -41,7 +41,7 @@ DEMOSTHENES=123.456.789.012
 # Allow two types of ICMP
 /sbin/iptables -A INPUT -p icmp -d $DEMOSTHENES --icmp-type 8/0 -j LOG --log-level 7 --log-prefix "Accept Ping"
 /sbin/iptables -A INPUT -p icmp -d $DEMOSTHENES --icmp-type 8/0 -j ACCEPT
-/sbin/iptables -A INPUT -p icmp -d $DEMOSTHENES --icmp-type 8/0 -j LOG --log-level 7 --log-prefix "Accept Time Exceeded"
+/sbin/iptables -A INPUT -p icmp -d $DEMOSTHENES --icmp-type 11/0 -j LOG --log-level 7 --log-prefix "Accept Time Exceeded"
 /sbin/iptables -A INPUT -p icmp -d $DEMOSTHENES --icmp-type 11/0 -j ACCEPT
 
 #############################
